@@ -59,7 +59,7 @@ var myFloatVar float64= 4.4838894858530
 
 ### Boolean type
 
-Boolean type variable are declared using the keyword bool as shown in the below snippet
+Boolean type variable are declared using the keyword `bool` as shown in the below snippet
 
 ```go
 var myBooleanVal bool= true
