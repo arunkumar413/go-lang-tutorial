@@ -73,3 +73,31 @@ We can declare multiple variables in a single statement using the comma separate
 ```go
   var a, b, c, d int = 1, 3, 5, 7
 ```
+
+Multiple varible declarations and their type can declared as shown below for greater readability.
+
+```go
+var (
+     a int
+     b int = 1
+     c string = "hello"
+   )
+```
+
+### Type inference
+
+We can declare variables without explicitly using a type keyword. For example the following snippet is perfectly valid.
+
+```go
+  var a, b = 6, "Hello"
+```
+
+Here the variable `a` is assigned the value of `6` and the variable `b` is assigned the string value of `"Hello"`. In this case the type of the variable is inferred by the go compiler based on the value we assign.
+
+### constants
+
+If a variable is readonly and doesn't need to change its value we can declare the variable as a `const`.
+
+```go
+const PI float32= 3.14
+```
