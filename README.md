@@ -1,6 +1,6 @@
 # go-lang-tutorial
-Go language tutorial
 
+Go language tutorial
 
 ```go
 package main
@@ -17,3 +17,59 @@ The example above shows a simple go program.
 The statement `package main` declares the program that we're writing as main package.
 The statement `import "fmt" ` imports a package called fmt. fmt is an inbuilt package of go language.
 The line `fmt.Println("Hello, World!")` uses the Println method of fmt package to print the string "Hello world" to the console.
+
+## Variables
+
+Variables in go language are declared using the below syntax. The below example shows the declaration of variable of string type.
+
+```go
+ var name string ="John"
+```
+
+We declare the variable using the `var` keyword followed by the name of the variabe (in this case `name`) and type of the variable (In the above case it's a `string`)
+
+Similarly we can delcare a variable of interger type as below
+
+```go
+ var myAge int= 36
+```
+
+### Other integer variable types
+
+```go
+var myVar1 int8= 12         // 8 bit integer
+var myVar2 int16= 345       // 16 bit integer
+var myVar3 int32= 374384    // 32 bit integer
+var myVar4 int64= 34399343  // 64 bit integer
+var myVar5 uint= 32         // unsigned integer
+var myVar6 uint8=87         // 8 bit unsigned integer
+var myVar7 uint16=456       // 16 bit unsigned integer
+var myVar8 uint32=389393    // 32 bit unsigned integer
+var myVar9 uint64= 390893934  // 64 bit unsigned integer
+```
+
+### Floating point variables
+
+Floating point varibles are declared using the keywords `float32` and `float64`
+
+```go
+var pi float32 = 3.14159
+var myFloatVar float64= 4.4838894858530
+```
+
+### Boolean type
+
+Boolean type variable are declared using the keyword bool as shown in the below snippet
+
+```go
+var myBooleanVal bool= true
+var isUserLoggedIn bool= false
+```
+
+## Declare multiple variables in a single statement
+
+We can declare multiple variables in a single statement using the comma separated notation as shown below. Here the variables a,b,c and d are assigned the values 1,3,5 and 7 respectively.
+
+```go
+  var a, b, c, d int = 1, 3, 5, 7
+```
