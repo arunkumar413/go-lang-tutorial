@@ -101,3 +101,43 @@ If a variable is readonly and doesn't need to change its value we can declare th
 ```go
 const PI float32= 3.14
 ```
+
+## Arrays
+
+Arrays are used to store the multiple values of the same type. In go language an array can be declared as follows.
+
+`var array_name= [array_length]data_type{array_values}`
+
+We can also make the go compiler infer the length of the array from the values.
+
+`var array_name = [...]datatype{values} // here length is inferred`
+
+Example:
+
+```go
+var myArr1= [3]int{1,2,3}  // array of length 3 with 3 values
+
+var myArr2= [...]int{5,4,3,2}   // Here the length of the array is infered from the values
+
+var fruits= [3]string{"Apple","Banana","Mango"}  // Array of string data type
+```
+
+### Access array elements
+
+In Go language arrays start at zero index. An element of an array can be accessed using the below syntax.
+
+`array_name[numerical_index]`
+
+For example:
+
+```go
+package main
+import ("fmt")
+
+func main() {
+var fruits= [3]string{"Apple","Banana","Mango"}
+
+  fmt.Println(fruits[0])   // prints Apple
+  fmt.Println(fruits[2])   // prints Mango
+}
+```
