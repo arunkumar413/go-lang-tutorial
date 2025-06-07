@@ -147,13 +147,41 @@ We can also choose to initialize the array at specific indexes only.
 for example, in the below snippet an array of length 5 is declared but the values are not assigned. So by default 0 value is assigned for each index.
 
 ```go
-  arr1 = [5]int{} // not initializeds
+  var arr1 = [5]int{} // not initializeds
 ```
 
-### partially initialized array
+### Partially initialized array
 
-Whereas in the below code, the array is partially initialized.
+Whereas in the below code, the array is partially initialized. Even though the length of the array is declared as 5, only 0 and 1 index values are initialized.
 
 ```go
-  arr2 = [5]int{1,2} //partially initialized
+  var arr2 = [5]int{1,2} //partially initialized
+```
+
+### Initialize only specific elements
+
+In go language it's possible to initialize only the specific elements of the array.
+
+For example in the below code we assign the 2nd element to 10 and 4th element to 40
+
+```go
+  arr1 := [5]int{1:10,3:40}
+
+```
+
+### Length of an array
+
+To find the length of an array we can use the `len()` method.
+For example:
+
+```go
+  package main
+import ("fmt")
+
+func main() {
+  var arr1 = [4]string{"Volvo", "BMW", "Ford", "Mazda"}
+
+  fmt.Println(len(arr1))
+}
+
 ```
