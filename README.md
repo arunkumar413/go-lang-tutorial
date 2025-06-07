@@ -141,3 +141,19 @@ var fruits= [3]string{"Apple","Banana","Mango"}
   fmt.Println(fruits[2])   // prints Mango
 }
 ```
+
+We can also choose to initialize the array at specific indexes only.
+
+for example, in the below snippet an array of length 5 is declared but the values are not assigned. So by default 0 value is assigned for each index.
+
+```go
+  arr1 = [5]int{} // not initializeds
+```
+
+### partially initialized array
+
+Whereas in the below code, the array is partially initialized.
+
+```go
+  arr2 = [5]int{1,2} //partially initialized
+```
