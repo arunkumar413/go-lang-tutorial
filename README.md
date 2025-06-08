@@ -239,7 +239,7 @@ Since slices use arrays under the hood, we can create a slice from an array as s
 
 ### Create slice using the make method
 
-A slice can also be created using the make method.
+A slice can also be created using the make function.
 
 `slice_name := make([]type,length, capacity)`
 
