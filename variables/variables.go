@@ -18,5 +18,16 @@ func main() {
 	var i uint64 = 455353453435
 	var j uint8 = 45
 
-	fmt.Println(a, b, c, d, e, f, g, h, i, j)
+	//floating point variables
+	var k float32 = 3.45444
+	var l float64 = 455.655455
+
+	//strings
+	var m string = "I'm a simple string"
+
+	// booleans
+	var n bool = true
+	var o bool = false
+
+	fmt.Println(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o)
 }
